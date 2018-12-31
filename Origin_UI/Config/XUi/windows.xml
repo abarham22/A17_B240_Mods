@@ -1,0 +1,280 @@
+<configs>
+
+	<!-- 
+
+		Origin - "7 Days to Die" UI Mod by Tritox:
+
+		Game version:	A17.0 (b240)
+		Mod version:	1.02
+		Date:			27.12.2018
+
+	-->
+
+	<append xpath="/windows">
+
+		<!--  NOTE:
+		windows tagged as [NEW] are entirely new windows while [MODDED] 
+		windows base on some existing window which properties have been tweaked -->
+
+		<!-- ============================================================== -->
+
+		<!-- [NEW] HUDInfoPanel : Day, time, world temperature and elevation indicators (top left) -->
+
+		<window name="HUDInfoPanel" style="infopanel.window" controller="CompassWindow">
+			<texture name="compassTexture" /> <!-- Required by CompassWindow-controller and removing the element will cause an unexpected error during the startup -->
+			<rect pos="-9,-72" width="500" height="26"> <!-- Positioned down to negate the container window's placement -->
+				<!-- Day -->
+				<label depth="2" width="90" pos="0,-3" font_size="22" text="{daytitle} {day|always}" effect="outline" justify="center" />
+
+				<!-- Time -->
+				<sprite depth="2" style="icon22px" pos="110,-2" sprite="ui_game_symbol_clock" />
+				<label depth="2" width="68" pos="132,-3" font_size="22" text="{time|always}" effect="outline" justify="center" />
+
+				<!-- World temperature -->
+				<sprite depth="2" style="icon22px" pos="220,-2" sprite="ui_game_symbol_cold" />
+				<label depth="2" width="68" pos="242,-3" font_size="22" text="{maptemperature}" effect="outline" justify="center" controller="MapStats" />
+
+				<!-- Elevation -->
+				<sprite depth="2" style="icon22px" pos="330,-2" sprite="ui_game_symbol_climb" />
+				<label depth="2" width="68" pos="352,-3" font_size="22" text="{mapelevation} M" effect="outline" justify="center" controller="MapStats" />
+
+				<!-- Wind -->
+				<!-- <sprite depth="2" style="icon22px" pos="440,-2" sprite="ui_game_symbol_wind" />
+				<label depth="2" width="68" pos="472,-3" font_size="22" text="{mapwind} MPH" effect="outline" justify="center" controller="MapStats" /> -->
+			</rect>
+		</window>
+
+		<!-- [NEW] HUDTempWaterFood : Feels like -temperature, water and food indicators (bottom left) -->
+
+		<window name="HUDTempWaterFood" style="tempwaterfood.window" controller="InGameHUD">
+			<grid name="hud" rows="2" cols="1" width="171" cell_width="171" cell_height="48" repeat_content="false" >
+				<!-- Temperature -->
+				<rect width="171" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+					<sprite depth="1" name="border" color="0,0,0,150" height="43" type="sliced"/>
+					<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+
+					<filledsprite depth="3" name="background" color="110,110,110,128" type="filled" fill="1" />
+
+					<sprite depth="4" color="172,115,36" height="41" width="169" />
+
+					<sprite depth="5" name="Icon" sprite="ui_game_symbol_temperature" size="32,32" pos="8,-6" foregroundlayer="true"/>
+					<label depth="6" name="TextContent" pos="0,-10" font_size="24" color="[white]" justify="center" pivot="topleft" text="{playercoretemp}" height="30" controller="PlayerStatsWindow" effect="outline" />
+
+					<sprite depth="8" name="border" color="0,0,0,255" height="43" type="sliced" fillcenter="false"/>
+					<filledsprite depth="8" name="background" color="0,0,0,255" width="171" fillcenter="false" type="filled" fill="1" />
+					<filledsprite depth="3" name="background" color="0,0,0,255" width="170" fillcenter="false" type="filled" fill="1" />
+				</rect>
+
+				<grid name="hud" rows="1" cols="2" width="171" cell_width="89" cell_height="46" repeat_content="false">
+					<!-- Water -->
+					<rect width="82" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+						<sprite depth="1" name="border" color="0,0,0,150" height="43" type="sliced"/>   
+						<sprite depth="2" name="background" color="64,64,64,100" type="sliced" />
+						<filledsprite depth="3" name="background" color="110,110,110,128" type="filled" fill="1" />
+						<sprite depth="4" color="52,137,167" type="filled" fill="{playerwaterfill}" controller="PlayerStatsWindow" />
+						<sprite depth="5" name="Icon" sprite="ui_game_symbol_water" size="22,22" pos="8,-11" foregroundlayer="true"/>
+						<label depth="6" name="TextContent" pos="35,-14" font_size="20" color="[white]" pivot="topleft" text="{playerwater} %" height="30" controller="PlayerStatsWindow" effect="outline" />
+						<sprite depth="8" name="border" color="0,0,0,255" height="43" type="sliced" fillcenter="false"/>
+						<filledsprite depth="8" name="background" color="0,0,0,255" width="82" fillcenter="false" type="filled" fill="1" />
+						<filledsprite depth="3" name="background" color="0,0,0,255" width="82" fillcenter="false" type="filled" fill="1" />
+					</rect>
+
+					<!-- Food -->
+					<rect width="81" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+						<sprite depth="1" name="border" color="0,0,0,150" height="43" type="sliced"/>
+					 	<sprite depth="2" name="background" color="64,64,64,100" type="sliced" />
+						<filledsprite depth="3" name="background" color="110,110,110,128" type="filled" fill="1" />
+						<sprite depth="4" color="52,174,86" type="filled" fill="{playerfoodfill}" controller="PlayerStatsWindow" />
+						<sprite depth="5" name="Icon" sprite="ui_game_symbol_fork" size="22,22" pos="8,-11" foregroundlayer="true"/>
+						<label depth="6" name="TextContent" pos="35,-14" font_size="20" color="[white]" pivot="topleft" text="{playerfood} %" height="30" controller="PlayerStatsWindow" effect="outline" />
+						<filledsprite depth="8" name="background" color="0,0,0,255" width="81" fillcenter="false" type="filled" fill="1" />
+						<filledsprite depth="3" name="background" color="0,0,0,255" width="80" fillcenter="false" type="filled" fill="1" />
+					</rect>
+				</grid>
+			</grid>
+		</window>
+
+		<!-- [NEW] HUDBottomBar : Player level indicator and toolbelt numbers (bottom center) -->
+
+		<window name="HUDBottomBar" style="botbar.window" controller="ToolbeltWindow" visible="{ToolbeltVisible}" >
+			<!-- Icon coupled with player level -->
+			<rect pos="-35,12" width="32" height="32" >
+				<sprite depth="3" name="windowIcon" width="32" height="32" pos="0,0" sprite="ui_game_symbol_trophy" />
+				<label depth="4" name="levelNumber" pos="2,-4" width="28" height="28" text="{playerlevel}" color="255,255,255,255" justify="center" controller="PlayerStatsWindow" effect="outline" />
+			</rect>
+
+			<!-- Toolbelt numbers -->
+			<grid depth="1" rows="1" cols="8" pos="6,-14" cell_width="75" cell_height="75" repeat_content="false">
+				<label depth="50" width="12" height="22" text="1" font_size="22" effect="outline" color="[white]" justify="center" />
+				<label depth="50" width="12" height="22" text="2" font_size="22" effect="outline" color="[white]" justify="center" />
+				<label depth="50" width="12" height="22" text="3" font_size="22" effect="outline" color="[white]" justify="center" />
+				<label depth="50" width="12" height="22" text="4" font_size="22" effect="outline" color="[white]" justify="center" />
+				<label depth="50" width="12" height="22" text="5" font_size="22" effect="outline" color="[white]" justify="center" />
+				<label depth="50" width="12" height="22" text="6" font_size="22" effect="outline" color="[white]" justify="center" />
+				<label depth="50" width="12" height="22" text="7" font_size="22" effect="outline" color="[white]" justify="center" />
+				<label depth="50" width="12" height="22" text="8" font_size="22" effect="outline" color="[white]" justify="center" />
+			</grid>
+		</window>
+
+		<!-- [NEW] HUDBuffDurations : Buff duration timers (middle center) -->
+
+		<!-- <window name="HUDBuffDurations" style="buffduration.window" controller="ActiveBuffWindow" >
+			<button name="pageDown" pos="99999,99999" width="1" height="1" />
+			<label name="pageNumber" pos="99999,99999" width="1" height="1" />
+			<button name="pageUp" pos="99999,99999" width="1" height="1" />
+
+			<rect name="buffs" controller="ActiveBuffList" pos="65,0">
+				<panel pos="0,-315" width="132" height="43" controller="ActiveBuffEntry" disableautobackground="true" >
+					<sprite name="backgroundMain" color="[transparent]" />
+					<sprite name="background" color="[transparent]" />
+					<label depth="2" pos="0,-10" width="90" height="22" color="[white]" text="{buffdisplayinfo}" font_size="22" pivot="topleft" effect="outline" />
+				</panel>
+
+				<panel pos="0,-270" width="132" height="43" controller="ActiveBuffEntry" disableautobackground="true" >
+					<sprite name="backgroundMain" color="[transparent]" />
+					<sprite name="background" color="[transparent]" />
+					<label depth="2" pos="0,-10" width="90" height="22" color="[white]" text="{buffdisplayinfo}" font_size="22" pivot="topleft" effect="outline" />
+				</panel>
+
+				<panel pos="0,-225" width="132" height="43" controller="ActiveBuffEntry" disableautobackground="true" >
+					<sprite name="backgroundMain" color="[transparent]" />
+					<sprite name="background" color="[transparent]" />
+					<label depth="2" pos="0,-10" width="90" height="22" color="[white]" text="{buffdisplayinfo}" font_size="22" pivot="topleft" effect="outline" />
+				</panel>
+
+				<panel pos="0,-180" width="132" height="43" controller="ActiveBuffEntry" disableautobackground="true" >
+					<sprite name="backgroundMain" color="[transparent]" />
+					<sprite name="background" color="[transparent]" />
+					<label depth="2" pos="0,-10" width="90" height="22" color="[white]" text="{buffdisplayinfo}" font_size="22" pivot="topleft" effect="outline" />
+				</panel>
+
+				<panel pos="0,-135" width="132" height="43" controller="ActiveBuffEntry" disableautobackground="true" >
+					<sprite name="backgroundMain" color="[transparent]" />	
+					<sprite name="background" color="[transparent]" />
+					<label depth="2" pos="0,-10" width="90" height="22" color="[white]" text="{buffdisplayinfo}" font_size="22" pivot="topleft" effect="outline" />
+				</panel>
+
+				<panel pos="0,-90" width="132" height="43" controller="ActiveBuffEntry" disableautobackground="true" >
+					<sprite name="backgroundMain" color="[transparent]" />
+					<sprite name="background" color="[transparent]" />
+					<label depth="2" pos="0,-10" width="90" height="22" color="[white]" text="{buffdisplayinfo}" font_size="22" pivot="topleft" effect="outline" />
+				</panel>
+
+				<panel pos="0,-45" width="132" height="43" controller="ActiveBuffEntry" disableautobackground="true" >
+					<sprite name="backgroundMain" color="[transparent]" />
+					<sprite name="background" color="[transparent]" />
+					<label depth="2" pos="0,-10" width="90" height="22" color="[white]" text="{buffdisplayinfo}" font_size="22" pivot="topleft" effect="outline" />
+				</panel>
+
+				<panel pos="0,0" width="132" height="43" controller="ActiveBuffEntry" disableautobackground="true" >
+					<sprite name="backgroundMain" color="[transparent]" />	
+					<sprite name="background" color="[transparent]" />
+					<label depth="2" pos="0,-10" width="90" height="22" color="[white]" text="{buffdisplayinfo}" font_size="22" pivot="topleft" effect="outline" />
+				</panel>
+			</rect>
+		</window> -->
+
+		<!-- [MODDED] HUDLeftStatBars : Health, stamina, stealth and active buff list indicators (bottom left)
+
+			 Changes: 1) changed HUDLeftStatBars's rect pos top value: 147 -> 243
+				  2) changed Stealth's rect height value: 44 -> 43
+				  3) added text outline to Stealth's label.
+				  4) changed Stamina's rect pos top value: -47 -> -143
+				  5) added text outline to Stamina's label.
+				  6) changed Health's rect pos top value: -94 -> -190
+				  7) added text outline to Health's label.
+				  8) changed BuffPopoutList top position to 228 to factor in the new bars for
+				     food, drink and feels like -temperature.
+		-->
+
+		<window name="ORGN_HUDLeftStatBars">
+			<rect name="hud" pos="9,243" rows="2" cols="1" width="168" side="right"> <!-- 1) changed: pos top value from 147 to 243 -->
+			<!-- <grid name="hud" pos="9,98" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="left" >  -->
+				<rect width="171" height="43" controller="HUDStatBar" stat_type="Stealth" visible="{statvisible}"> <!-- 2) changed: height from 44 to 43 -->
+					<sprite depth="1" name="border" color="0,0,0,150" height="43" type="sliced" />
+					<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+					<filledsprite depth="3" name="background" color="110,110,110,128" type="filled" fill="1" />
+					<filledsprite depth="4" name="BarContent" color="{stealthcolor}" type="filled" fill="0" />
+					<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
+					<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" height="30" effect="outline" /> <!-- 3) added: effect="outline" -->
+					<sprite depth="8" name="border" color="0,0,0,255" height="43" type="sliced" fillcenter="false"/>
+					<filledsprite depth="8" name="background" color="0,0,0,255" width="171" fillcenter="false" type="filled" fill="1" />
+					<filledsprite depth="3" name="background" color="0,0,0,255" width="170" fillcenter="false" type="filled" fill="1" />
+				</rect>
+
+				<rect width="171" height="43" pos="0,-143" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}"> <!-- 4) changed: pos top value from -47 to -143 -->
+					<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+					<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+					<filledsprite depth="3" name="background" color="110,110,110,128" width="169" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="5" name="BarContent" color="0,54,255,128" width="169" type="filled" fill="0"  />
+					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" size="32,32" pos="8,-6" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30" effect="outline" /> <!-- 5) added: effect="outline" -->
+					<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+					<filledsprite depth="8" name="background" color="0,0,0,255" width="171" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="3" name="background" color="0,0,0,255" width="170" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+				</rect>
+
+				<rect width="171" height="43" pos="0,-190" controller="HUDStatBar" stat_type="Health" visible="{statvisible}"> <!-- 6) changed: pos top value from -94 to -190  -->
+					<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+					<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+					<filledsprite depth="3" name="background" color="110,110,110,128" width="169" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="5" name="BarContent" color="255,0,0,128" width="169" type="filled" fill="0" />
+					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30" effect="outline" /> <!-- 7) added: effect="outline" -->
+					<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+					<filledsprite depth="8" name="background" color="0,0,0,255" width="171" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="3" name="background" color="0,0,0,255" width="170" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+				</rect>
+			</rect>
+
+			<rect name="hud" pos="90,224" side="left" controller="BuffPopoutList" pivot="BottomLeft" > <!-- 8) changed: pos top value from 124 to 228 -->
+				<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" >
+					<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
+					<sprite depth="4" name="Icon" size="36,32" pos="-58,0" pivot="center" color="[transparent]"/>
+					<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="30" pivot="center"/> <!-- To enable BUFF TIMERS: change label's color value from 'white' to 'transparent' -->
+				</panel>
+			</rect>
+		</window>
+
+		<!-- [MODDED] windowCompass : Compass (top center)
+
+			 Changes: 1) added simple sprite for the direction player is facing.
+				  2) removed the day and time display.
+		-->
+
+		<window name="ORGN_windowCompass" style="compass.window" controller="CompassWindow">
+			<sprite style="compass.window.background.border"/>
+			<sprite style="compass.window.background"/>
+			<sprite style="compass.window.compass.background">
+			<sprite depth="11" pos="190,0" width="1" color="[white]" type="sliced" /> <!-- 1) added: midpoint to compass-->
+			</sprite>
+			<texture style="compass.window.compass.texture" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" >
+			</texture>
+
+			<!-- 2) -->
+		</window>
+
+		<!-- [MODDED] windowQuestTracker : Active quest tracker (top right) 
+
+			 Changes: 1) added text outline to quest name's label.
+				  2) replaced quest_objective_tracker_entry control with it's content from the
+				     controls.xml so there is no need to modify the actual xml to add the text
+				     outline effect in 3).
+				  3) added text outline to quest objective labels.
+		-->
+
+		<window name="ORGN_windowQuestTracker" pos="-255, -88" width="300" height="100" anchor="RightTop" controller="QuestTrackerWindow" visible="{showquest}" depth="-20">
+			<sprite pos="6,6" name="Background" sprite="ui_game_popup" height="43" width="240" />
+			<label depth="3" text="{questtitle}" font_size="26" justify="right" upper_case="true" pos="-100, -5" height="28" effect="outline" /> <!-- 1) added: effect="outline" -->
+			<sprite pos="210,0" name="windowIcon" style="icon32px" sprite="{questicon}" justify="right"/>
+			<sprite pos="6,-38" name="Background" sprite="ui_game_popup" height="{trackerheight}" width="240" />
+			<grid name="objectiveList" rows="8" cols="1" pos="-60,-44" cell_width="300" cell_height="26" repeat_content="true" arrangement="vertical" controller="QuestTrackerObjectiveList" complete_icon="ui_game_symbol_check" incomplete_icon="ui_game_symbol_x" complete_color="[green]" >
+				<rect width="300" height="26" controller="QuestTrackerObjectiveEntry" visible="{hasobjective}" > <!-- 2) -->
+					<sprite depth="2" name="iconTrack" style="icon22px" pos="280,0" color="{objectivecompletecolor}" sprite="{objectivecompletesprite}" visible="{objectiveshowicon}" />
+					<label depth="1" pos="0,4" text="{objectiveoptional}[{objectivephasehexcolor}]{objectivedescription}[-] [{objectivecompletehexcolor}]{objectivestate}[-]"  upper_case="true" font_size="26" justify="right" visible="{hasobjective}" width="{objectivetextwidth}" effect="outline" /> <!-- 3) added: effect="outline" -->
+				</rect>
+			</grid>
+		</window>
+	</append>
+
+</configs>

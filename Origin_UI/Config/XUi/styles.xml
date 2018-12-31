@@ -1,0 +1,48 @@
+<configs>
+
+	<!-- 
+
+		Origin - "7 Days to Die" UI Mod by Tritox:
+
+		Game version:	A17.0 (b240)
+		Mod version:	1.02
+		Date:			27.12.2018
+
+	-->
+	
+	<append xpath="/styles">
+
+		<!-- infopanel.window : Style for day, time, world temperature and elevation window -->
+
+		<style name="infopanel.window" type="window">
+			<style_entry name="pos" value="9,50"/> <!-- 50 for vertical position to hide the waypoints from the screen as they seem to be hardcoded into the CompassWindow-controller -->
+			<style_entry name="size" value="300,80"/>
+			<style_entry name="anchor" value="LeftTop"/>
+		</style>
+
+		<!-- tempwaterfood.window : Style for player temperature, water and food window -->
+
+		<style name="tempwaterfood.window" type="window">
+			<style_entry name="pos" value="9,196"/>
+			<style_entry name="anchor" value="LeftBottom"/>
+		</style>
+
+		<!-- botbar.window : Style for player level indicator and toolbelt numbers window -->
+
+		<style name="botbar.window" type="window">
+			<style_entry name="pos" value="-313, 97"/>
+			<style_entry name="size" value="603,30"/>
+			<style_entry name="anchor" value="CenterBottom"/>
+		</style>
+
+		<!-- buffduration.window : Style for buff durations window -->
+
+		<style name="buffduration.window" type="window">
+			<style_entry name="pos" value="9,560"/>
+			<style_entry name="size" value="132,390"/>
+			<style_entry name="anchor" value="LeftBottom"/>
+		</style>
+
+	</append>
+
+</configs>

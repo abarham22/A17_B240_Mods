@@ -1,0 +1,51 @@
+<configs>
+
+	<!-- 
+
+			Origin - "7 Days to Die" UI Mod by Tritox:
+
+		Game version:	A17.0 (b240)
+		Mod version:	1.02
+		Date:			27.12.2018
+	
+	-->
+
+	<!-- HUD Info Panel -->
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+		<window name="HUDInfoPanel" />
+	</append>
+
+	<!-- HUD Temperature Water Food -->
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="HUDTempWaterFood" />
+	</append>
+
+	<!-- HUD Bottom Bar -->
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="HUDBottomBar" />
+	</append>
+
+	<!-- HUD Buff Durations -->
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="HUDBuffDurations" />
+	</append>
+
+	<!-- Left HUD -->
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']"/>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="ORGN_HUDLeftStatBars" anchor="LeftBottom" />
+	</append>
+
+	<!-- Window Compass -->
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='compass']/window[@name='windowCompass']"/>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+		<window name="ORGN_windowCompass" />
+	</append>
+
+	<!-- Window Quest Tracker -->
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']/window[@name='windowQuestTracker']"/>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="ORGN_windowQuestTracker" anchor="RightTop" />
+	</append>
+
+</configs>

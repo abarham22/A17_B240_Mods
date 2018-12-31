@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Origin_UI" />
+		<Description value="UI mod which adds some more details to the UI while trying to keep the original UI's feeling." />
+		<Author value="Tritox" />
+		<Version value="1.02" />
+		<Website value="" />
+	</ModInfo>
+</xml>
