@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="itemstack-fixes" />
+		<Description value="Increase some stack sizes to make more sense" />
+		<Author value="n3cr0" />
+		<Version value="1.0" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>
