@@ -29,7 +29,6 @@
 	<set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Stacknumber']/@value">50</set>
 	<set xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">50</set>
 	<set xpath="/items/item[@name='medicalSplint']/property[@name='Stacknumber']/@value">50</set>
-	<set xpath="/items/item[@name='medicalPlasterCast']/property[@name='Stacknumber']/@value">50</set>
 	<set xpath="/items/item[@name='medicalBloodDrawKit']/property[@name='Stacknumber']/@value">50</set>
 	<set xpath="/items/item[@name='medicalBloodBag']/property[@name='Stacknumber']/@value">50</set>
 	<set xpath="/items/item[@name='medicalSnowberryExtract']/property[@name='Stacknumber']/@value">50</set>
