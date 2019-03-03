@@ -2,7 +2,7 @@
 <xml>
 	<ModInfo>
 		<Name value="BetterCraftingMod" />
-		<Description value="Stasis' BetterCraftingMod - stop the insanity" />
+		<Description value="Adds 100x recipes for cobblestone, cement, and related items to reduce server lag -- does not change ratios" />
 		<Author value="stasis" />
 		<Version value="1.0" />
 	</ModInfo>

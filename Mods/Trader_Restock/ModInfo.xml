@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="xTraderDailyRestock" />
-		<Description value="Makes the traders restock everyday." />
-		<Author value="Xajar" />
+		<Name value="Trader_Restock" />
+		<Description value="Changes to restock timers." />
+		<Author value="n3cr0" />
 		<Version value="1.0" />
-		<Website value="https://7daystodie.com/forums/showthread.php?100868-Xajar-s-Mod-Collection" />
+		<Website value="" />
 	</ModInfo>
 </xml>
