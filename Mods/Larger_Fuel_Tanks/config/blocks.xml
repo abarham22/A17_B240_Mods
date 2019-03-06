@@ -1,0 +1,5 @@
+<config>
+
+	<set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">2000</set> <!-- Default 1000 -->
+	
+</config>
