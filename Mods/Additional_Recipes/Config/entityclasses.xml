@@ -1,0 +1,5 @@
+<configs>
+	<insertAfter xpath="/entityclasses/entity_class[@name='animalChicken']/property[@name='DeadBodyHitPoints']" >
+	   <drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="4"/>
+	</insertAfter>
+</configs>

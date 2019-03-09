@@ -26,5 +26,19 @@
 	<ingredient name="unit_lead" count="1"/>
 </recipe>
 
+<!-- Glue -->
+<recipe name="resourceGlue" count="1" craft_area="campfire" craft_tool="toolBeaker" always_unlocked="true">
+	<ingredient name="drinkJarRiverWater" count="1"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+</recipe>
+
+<recipe name="resourceGlue" count="2" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+</recipe>
+
+
 		</append>
 </configs>
