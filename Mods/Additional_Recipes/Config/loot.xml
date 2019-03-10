@@ -1,6 +1,6 @@
 <configs>
 
-	<insertAfter xpath="/lootcontainers/lootcontainer[@id='25']" >
+	<insertAfter xpath="/lootcontainers/lootcontainer[@id='25']/item[@name='resourceFeather']" >
     <item name="resourceFemur" count="1,2" prob=".5"></item>
   </insertAfter>
 
