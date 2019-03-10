@@ -1,0 +1,7 @@
+<configs>
+
+	<insertAfter xpath="/lootcontainers/lootcontainer[@id='25']" >
+    <item name="resourceFemur" count="1,2" prob=".5"></item>
+  </insertAfter>
+
+</configs>

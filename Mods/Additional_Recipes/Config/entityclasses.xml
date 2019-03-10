@@ -1,0 +1,24 @@
+
+
+<configs>
+	<insertAfter xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='DeadBodyHitPoints']" >
+	   <drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
+	</insertAfter>
+
+  <insertAfter xpath="/entity_classes/entity_class[@name='animalZombieVulture']/property[@name='DeadBodyHitPoints']" >
+	   <drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
+	</insertAfter>
+
+  <insertAfter xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/property[@name='DeadBodyHitPoints']" >
+	   <drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="5"/>
+	</insertAfter>
+
+  <insertAfter xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='DeadBodyHitPoints']" >
+	   <drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="2"/>
+	</insertAfter>
+
+  <insertAfter xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='DeadBodyHitPoints']" >
+     <drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
+  </insertAfter>
+
+</configs>

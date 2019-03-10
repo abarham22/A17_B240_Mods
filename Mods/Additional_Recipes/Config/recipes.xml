@@ -39,6 +39,10 @@
 	<ingredient name="resourceScrapPolymers" count="1"/>
 </recipe>
 
+<recipe name="resourceGlue" count="2" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="resourceFemur" count="1"/>
+</recipe>
 
 		</append>
 </configs>
