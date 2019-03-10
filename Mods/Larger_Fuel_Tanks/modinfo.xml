@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-	
+
 		<Name value="Larger Fuel Tanks" />
 		<Description value="Larger Fuel tanks on Auger/Chainsaw/SmallEngines/Generator/Minibike/4x4/Motorcycle/Gyrocopter. A17 (b208)" />
 		<Author value="coRpSE" />

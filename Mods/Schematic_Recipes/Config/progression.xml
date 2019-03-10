@@ -1,0 +1,28 @@
+<configs>
+
+<!--  Science Progression  -->
+	<append xpath="/progression/perks/perk[@name='perkYeahScience']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5"
+			tags="modGunMuzzleBrakeSchematic,modGunFlashlightSchematic,modGunScopeSmallSchematic,modGunTriggerGroupSemiSchematic,modGunBipodSchematic,modGunForegripSchematic,modGunDuckbillSchematic,modGunChokeSchematic,modGunMagazineExtenderSchematic,modShotgunSawedOffBarrelSchematic,modGunMeleeTheHunterSchematic,modMeleeSerratedBladeSchematic,modMeleeWeightedHeadSchematic,modMeleeStructuralBraceSchematic,modMeleeGraveDiggerSchematic,modMeleeWoodSplitterSchematic"/>
+	<!-- Tier 1 Weapon mods -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5"
+			tags="modGunMuzzleBrakeSchematic,modGunFlashlightSchematic,modGunScopeSmallSchematic,modGunTriggerGroupSemiSchematic,modGunBipodSchematic,modGunForegripSchematic,modGunDuckbillSchematic,modGunChokeSchematic,modGunMagazineExtenderSchematic,modShotgunSawedOffBarrelSchematic,modGunMeleeTheHunterSchematic,modMeleeSerratedBladeSchematic,modMeleeWeightedHeadSchematic,modMeleeStructuralBraceSchematic,modMeleeGraveDiggerSchematic,modMeleeWoodSplitterSchematic"/>
+<!-- Tier 1 Armor mods -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5"
+			tags="modArmorCoolingMeshSchematic,modArmorInsulatedLinerSchematic,modArmorReinforcedPaddingSchematic,modArmorScrapPlatingSchematic,modArmorImprovedFittingsSchematic,modArmorStoragePocketSchematic,modArmorHelmetLightSchematic"/>
+<!-- Tier 2 Weapon mods -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5"
+			tags="modMeleeClubBurningShaftSchematic,modGunSoundSuppressorSilencerSchematic,modGunBarrelExtenderSchematic,modGunLaserSightSchematic,modGunScopeMediumSchematic,modGunReflexSightSchematic,modGunTriggerGroupBurstSchematic,modGunRetractingStockSchematic,modGunCrippleEmSchematic,modMeleeTemperedBladeSchematic,modMeleeFortifyingGripSchematic,modMeleeClubBarbedWireSchematic,modGunBowArrowRestSchematic"/>
+<!-- Tier 2 Armor mods -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5"
+			tags="modArmorPlasticPlatingSchematic,modArmorIronPlatingSchematic,modArmorSpikedKnucklesSchematic,modArmorCustomizedFittingsSchematic,modArmorDoubleStoragePocketSchematic,modArmorMuffledConnectorsSchematic,modArmorImpactBracingSchematic,modArmorWaterPurifierSchematic"/>
+<!-- Tier 3 Weapon mods -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5"
+			tags="modGunScopeLargeSchematic,modGunTriggerGroupAutomaticSchematic,modGunRodAndSpringSchematic,modGunBowPolymerStringSchematic,modMeleeErgonomicGripSchematic,modMeleeClubMetalSpikesSchematic,modMeleeIronBreakerSchematic,modArmorBandolierSchematic,modGunMeleeRadRemoverSchematic"/>
+<!-- Tier 3 Armor mods -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5"
+			tags="modArmorMilitaryPlatingSchematic,modArmorSteelPlatingSchematic,modArmorTripleStoragePocketSchematic,modArmorAdvancedMuffledConnectorsSchematic"/>
+
+
+	</append>
+</configs>

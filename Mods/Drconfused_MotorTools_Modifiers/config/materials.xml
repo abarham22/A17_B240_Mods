@@ -1,5 +1,4 @@
-<Drconfused_MotorTools_Upgrade>
-
+<configs>
 <append xpath="/materials">
 	<material id="MresourceRefinedSilicon">
 		<property name="damage_category" value="wood"/>
@@ -8,4 +7,4 @@
 		<property name="Experience" value="2"/>
 	</material>
 </append>
-</Drconfused_MotorTools_Upgrade>
+</configs>

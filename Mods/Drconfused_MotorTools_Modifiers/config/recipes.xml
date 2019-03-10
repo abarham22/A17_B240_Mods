@@ -1,4 +1,4 @@
-<Drconfused_MotorTools_Upgrade>
+<configs>
 <!-- Adding attachments to the auger and chainsaw as motortools -->
 
 <append xpath="/recipes">
@@ -8,63 +8,63 @@
 		<ingredient name="smallEngine" count="1"/>
 		<ingredient name="resourceElectricParts" count="5"/>
 		<ingredient name="resourceScrapPolymers" count="4"/>
-		<ingredient name="resourceForgedSteel" count="2"/>		
+		<ingredient name="resourceForgedSteel" count="2"/>
 	</recipe>
 	<recipe name="modEngineTurbo2" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modEngineTurbo2Schematic" count="1"/>
 		<ingredient name="smallEngine" count="2"/>
 		<ingredient name="resourceElectricParts" count="10"/>
 		<ingredient name="resourceScrapPolymers" count="6"/>
-		<ingredient name="resourceForgedSteel" count="5"/>		
-	</recipe>	
+		<ingredient name="resourceForgedSteel" count="5"/>
+	</recipe>
 	<recipe name="modEngineTurbo3" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modEngineTurbo3Schematic" count="1"/>
 		<ingredient name="smallEngine" count="3"/>
 		<ingredient name="resourceElectricParts" count="15"/>
 		<ingredient name="resourceScrapPolymers" count="10"/>
-		<ingredient name="resourceForgedSteel" count="10"/>		
+		<ingredient name="resourceForgedSteel" count="10"/>
 	</recipe>
-	
+
 <!-- GAS TANK -->
 	<recipe name="modGasTank1" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modGasTank1Schematic" count="1"/>
 		<ingredient name="resourceMetalPipe" count="2"/>
 		<ingredient name="resourceScrapPolymers" count="2"/>
 		<ingredient name="resourceForgedSteel" count="2"/>
-	</recipe>	
+	</recipe>
 	<recipe name="modGasTank2" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modGasTank2Schematic" count="1"/>
 		<ingredient name="resourceMetalPipe" count="4"/>
 		<ingredient name="resourceScrapPolymers" count="4"/>
 		<ingredient name="resourceForgedSteel" count="4"/>
-	</recipe>	
+	</recipe>
 	<recipe name="modGasTank3" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modGasTank3Schematic" count="1"/>
 		<ingredient name="resourceMetalPipe" count="8"/>
 		<ingredient name="resourceScrapPolymers" count="8"/>
 		<ingredient name="resourceForgedSteel" count="8"/>
 	</recipe>
-	
+
 <!-- RESERVE GAS TANK -->
 	<recipe name="modReserveGasTank1" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modReserveGasTank1Schematic" count="1"/>
 		<ingredient name="resourceMetalPipe" count="2"/>
 		<ingredient name="resourceScrapPolymers" count="2"/>
 		<ingredient name="resourceForgedSteel" count="2"/>
-	</recipe>	
+	</recipe>
 	<recipe name="modReserveGasTank2" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modReserveGasTank2Schematic" count="1"/>
 		<ingredient name="resourceMetalPipe" count="4"/>
 		<ingredient name="resourceScrapPolymers" count="4"/>
 		<ingredient name="resourceForgedSteel" count="4"/>
-	</recipe>	
+	</recipe>
 	<recipe name="modReserveGasTank3" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modReserveGasTank3Schematic" count="1"/>
 		<ingredient name="resourceMetalPipe" count="8"/>
 		<ingredient name="resourceScrapPolymers" count="8"/>
 		<ingredient name="resourceForgedSteel" count="8"/>
-	</recipe>	
-	
+	</recipe>
+
 <!-- BARREL EXTENSION -->
 	<recipe name="modMotorToolExtension1" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modMotorToolExtension1Schematic" count="1"/>
@@ -72,22 +72,22 @@
 		<ingredient name="resourceScrapPolymers" count="2"/>
 		<ingredient name="resourceForgedSteel" count="2"/>
 		<ingredient name="resourceMechanicalParts" count="2"/>
-	</recipe>	
+	</recipe>
 	<recipe name="modMotorToolExtension2" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modMotorToolExtension2Schematic" count="1"/>
 		<ingredient name="resourceMetalPipe" count="4"/>
 		<ingredient name="resourceScrapPolymers" count="4"/>
 		<ingredient name="resourceForgedSteel" count="4"/>
 		<ingredient name="resourceMechanicalParts" count="4"/>
-	</recipe>	
+	</recipe>
 	<recipe name="modMotorToolExtension3" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modMotorToolExtension3Schematic" count="1"/>
 		<ingredient name="resourceMetalPipe" count="8"/>
 		<ingredient name="resourceScrapPolymers" count="8"/>
 		<ingredient name="resourceForgedSteel" count="8"/>
 		<ingredient name="resourceMechanicalParts" count="8"/>
-	</recipe>	
-	
+	</recipe>
+
 <!--	DIAMOND TIP FOR AUGER	-->
 	<recipe name="modDiamondTip1" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modDiamondTip1Schematic" count="1"/>
@@ -95,14 +95,14 @@
 		<ingredient name="resourceRawDiamond" count="1"/>
 		<ingredient name="resourceForgedSteel" count="2"/>
 		<ingredient name="resourceMechanicalParts" count="2"/>
-	</recipe>	
+	</recipe>
 	<recipe name="modDiamondTip2" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modDiamondTip2Schematic" count="1"/>
 		<ingredient name="resourceMetalPipe" count="4"/>
 		<ingredient name="resourceRawDiamond" count="4"/>
 		<ingredient name="resourceForgedSteel" count="4"/>
 		<ingredient name="resourceMechanicalParts" count="4"/>
-	</recipe>	
+	</recipe>
 	<recipe name="modDiamondTip3" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modDiamondTip3Schematic" count="1"/>
 		<ingredient name="resourceMetalPipe" count="8"/>
@@ -112,14 +112,14 @@
 	</recipe>
 
 <!-- 	BETTER HANDLES 	-->
-	<!-- removing 2 entries to the better handles till I know better how it works and if there is a need for a series 
+	<!-- removing 2 entries to the better handles till I know better how it works and if there is a need for a series
 	<recipe name="modBetterHandles1" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modBetterHandles1" count="1"/>
 		<ingredient name="resourceMetalPipe" count="2"/>
 		<ingredient name="resourceForgedSteel" count="2"/>
 		<ingredient name="resourceMechanicalParts" count="2"/>
 		<ingredient name="resourceSpring" count="2"/>
-	</recipe>	
+	</recipe>
 	<recipe name="modBetterHandles2" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modBetterHandles2" count="1"/>
 		<ingredient name="resourceMetalPipe" count="4"/>
@@ -134,7 +134,7 @@
 		<ingredient name="resourceForgedSteel" count="8"/>
 		<ingredient name="resourceMechanicalParts" count="8"/>
 		<ingredient name="resourceSpring" count="8"/>
-	</recipe>	
+	</recipe>
 
 <!-- MOTOR TOOL SILENCER 	-->
 
@@ -144,8 +144,8 @@
 		<ingredient name="resourceForgedSteel" count="8"/>
 		<ingredient name="resourceMechanicalParts" count="8"/>
 		<ingredient name="resourceCropCottonPlant" count="20"/>
-	</recipe>	
-	
+	</recipe>
+
 <!-- CHAINSAW TEMPERED FRAME -->
 	<recipe name="modChainsawTemperedFrame1" counts="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modChainsawTemperedFrame1Schematic" count="1"/>
@@ -169,7 +169,7 @@
 		<ingredient name="resourceScrapPolymers" count="30"/>
 	</recipe>
 
-	
+
 <!--	mod Quicker Fixer Upper -->
 	<recipe name="Quicker Fixer Upper" counts="1" craft_area="workbench"> <!-- tags="learnable"> -->
 		<ingredient name="Quicker Fixer Upper Schematic" count="1"/>
@@ -179,9 +179,9 @@
 		<ingredient name="resourceScrapPolymers" count="5"/>
 	</recipe>
 
-	
-	
-	
+
+
+
 	<!-- 	:)	-->
 </append>
-</Drconfused_MotorTools_Upgrade>
+</configs>

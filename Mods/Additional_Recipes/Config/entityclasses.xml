@@ -9,10 +9,6 @@
 	   <drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
 	</insertAfter>
 
-  <insertAfter xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/property[@name='DeadBodyHitPoints']" >
-	   <drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="5"/>
-	</insertAfter>
-
   <insertAfter xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='DeadBodyHitPoints']" >
 	   <drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="2"/>
 	</insertAfter>

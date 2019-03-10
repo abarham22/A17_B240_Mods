@@ -1,11 +1,11 @@
-<Drconfused_MotorTools_Upgrade>
+<configs>
 <!-- adds in the following
 		modBetterHandles
 		modEngineTurbo	1,2,3
 		modGasTank 1,2,3
 		modMotorToolExtension 1,2,3
 		modDiamondTip 1,2,3
-		modMotorToolSilencer		
+		modMotorToolSilencer
 -->
 <!--  Science Progression  -->
 	<append xpath="/progression/perks/perk[@name='perkYeahScience']/effect_group">
@@ -18,9 +18,4 @@
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5"
 			tags="modMotorToolSilencer,modDiamondTip3,modMotorToolExtension3,modGasTank3,modEngineTurbo3,modReserveGasTank3,modChainsawTemperedFrame3,Quicker Fixer Upper"/>
 	</append>
-	
-<!-- Engineering Progression	-->
-
-
-
-</Drconfused_MotorTools_Upgrade>
+</configs>

@@ -1,4 +1,4 @@
-<Drconfused_MotorTools_Upgrade>
+<configs>
 <!-- Adding attachments to the auger and chainsaw as motorTools -->
 <!-- Need to add new tag to chainsaw and auger possibly to impact wrench and nail gun -->
 
@@ -39,7 +39,7 @@
 		<property name="DescriptionKey" value="schematicMaster5Desc"/>
 		<property name="EconomicValue" value="750"/>
 	</item>
-	
+
 <!-- GAS TANK -->
 	<item name="modGasTank1Schematic">
 		<property name="Extends" value="schematicMaster"/>
@@ -79,53 +79,53 @@
 		<property name="DescriptionKey" value="schematicMaster5Desc"/>
 		<property name="EconomicValue" value="750"/>
 	</item>
-	
-<!-- BLADE EXTENSION -->	
+
+<!-- BLADE EXTENSION -->
 	<item name="modMotorToolExtension1Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="CustomIcon" value="DrsAugerBlade1_schematic"/>
 		<property name="DescriptionKey" value="schematicMaster2Desc"/>
 		<property name="EconomicValue" value="250"/>
-	</item>	
+	</item>
 	<item name="modMotorToolExtension2Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="CustomIcon" value="DrsAugerBlade1_schematic"/>
 		<property name="DescriptionKey" value="schematicMaster3Desc"/>
 		<property name="EconomicValue" value="500"/>
-	</item>		
+	</item>
 	<item name="modMotorToolExtension3Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="CustomIcon" value="DrsAugerBlade1_schematic"/>
 		<property name="DescriptionKey" value="schematicMaster5Desc"/>
 		<property name="EconomicValue" value="750"/>
-	</item>	
-	
+	</item>
+
 <!-- DIAMOND TIP AUGER -->
 	<item name="modDiamondTip1Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="CustomIcon" value="DrsAugerBlade1_schematic"/>
 		<property name="DescriptionKey" value="schematicMaster2Desc"/>
 		<property name="EconomicValue" value="250"/>
-	</item>	
+	</item>
 	<item name="modDiamondTip2Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="CustomIcon" value="DrsAugerBlade1_schematic"/>
 		<property name="DescriptionKey" value="schematicMaster3Desc"/>
 		<property name="EconomicValue" value="500"/>
-	</item>		
+	</item>
 	<item name="modDiamondTip3Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="CustomIcon" value="DrsAugerBlade1_schematic"/>
 		<property name="DescriptionKey" value="schematicMaster5Desc"/>
 		<property name="EconomicValue" value="750"/>
-	</item>	
+	</item>
 
 <!-- BETTER HANDLES -->
-	<!-- removing 2 entries till I know its worth having them in 
+	<!-- removing 2 entries till I know its worth having them in
 	<item name="modBetterHandles1Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="EconomicValue" value="250"/>
-	</item>	
+	</item>
 	<item name="modBetterHandles2Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="EconomicValue" value="500"/>
@@ -135,43 +135,43 @@
 		<property name="CustomIcon" value="DrsAugerHandles1_schematic"/>
 		<property name="DescriptionKey" value="schematicMaster2Desc"/>
 		<property name="EconomicValue" value="500"/>
-	</item>	
-	
+	</item>
+
 <!-- MOTOR TOOL SILENCER -->
 	<item name="modMotorToolSilencerSchematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="CustomIcon" value="DrsSoundDampnerField1_schematic"/>
 		<property name="DescriptionKey" value="schematicMaster5Desc"/>
 		<property name="EconomicValue" value="750"/>
-	</item>	
-	
+	</item>
+
 <!-- CHAINSAW TEMPERED FRAME -->
 	<item name="modChainsawTemperedFrame1Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="CustomIcon" value="DrsChainsawBody1_schematic"/>
 		<property name="DescriptionKey" value="schematicMaster3Desc"/>
 		<property name="EconomicValue" value="250"/>
-	</item>		
+	</item>
 	<item name="modChainsawTemperedFrame2Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="CustomIcon" value="DrsChainsawBody1_schematic"/>
 		<property name="DescriptionKey" value="schematicMaster4Desc"/>
 		<property name="EconomicValue" value="500"/>
-	</item>	
+	</item>
 	<item name="modChainsawTemperedFrame3Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="CustomIcon" value="DrsChainsawBody1_schematic"/>
 		<property name="EconomicValue" value="500"/>
 		<property name="DescriptionKey" value="schematicMaster5Desc"/>
-	</item>	
+	</item>
 
-<!-- Quicker Fixer Upper -->	
+<!-- Quicker Fixer Upper -->
 	<item name="Quicker Fixer Upper Schematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="CustomIcon" value="DrsQuickerFixerUpper_Schematic"/>
 		<property name="DescriptionKey" value="schematicMaster5Desc"/>
 		<property name="EconomicValue" value="750"/>
-	</item>	
+	</item>
 
 
 <item name="Quicker Fixer Upper">
@@ -241,9 +241,9 @@
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
-</item>	
+</item>
 
-<!--  REFINED SILICONE for when its ready to be introduced 
+<!--  REFINED SILICONE for when its ready to be introduced
 	<item name="resourceRefinedSilicon">
 		<property name="HoldType" value="45"/>
 		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
@@ -257,6 +257,5 @@
 		<property name="CraftingIngredientTime" value="2"/>
 	</item>
 -->
-</append>		
-
-</Drconfused_MotorTools_Upgrade>
+</append>
+</configs>
