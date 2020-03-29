@@ -1,8 +1,0 @@
-<config>
-
-	<set xpath="/items/item[@name='smallEngine']/property[@class='Attributes']/property[@name='VehicleTankSize']/@value">2000, 3000</set> <!-- Default 1000, 2000 -->
-	<set xpath="/items/item[@name='meleeToolChainsaw']/*/passive_effect[@name='MagazineSize']/@value">600</set> <!-- Default 200 -->
-	<set xpath="/items/item[@name='meleeToolAuger']/*/passive_effect[@name='MagazineSize']/@value">800</set> <!-- Default 200 -->
-
-
-</config>

@@ -1,5 +1,0 @@
-<configs>
-	<insertAfter xpath="/blocks/block[@name='toolCookingPot']/property[@name='MaxDamage']" >
-		<property name="Stacknumber" value="2500"/>
-	</insertAfter>
-</configs>

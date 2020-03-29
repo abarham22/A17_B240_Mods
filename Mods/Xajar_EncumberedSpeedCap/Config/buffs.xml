@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<configs>
-
-	<!-- Reduces emcumbered speed																													Default			New -->
-	<set xpath="/buffs/buff[@name='buffEncumberedInv']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate'][@operation='multiply' and @value='0.026']/@value">0.013</set>
-
-</configs>
