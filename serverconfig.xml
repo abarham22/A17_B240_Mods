@@ -7,7 +7,7 @@
 	<property name="ServerDescription"				value="No Fun Since 2003"/>	<!-- Whatever you want the server description to be, will be shown in the server browser. -->
 	<property name="ServerWebsiteURL"				value=""/>					<!-- Website URL for the server, will be shown in the serverbrowser as a clickable link -->
 	<property name="ServerPassword"					value="pullman"/>					<!-- Password to gain entry to the server -->
-	<property name="ServerLoginConfirmationText"	value="You must confirm this message to continue" />					<!-- If set the user will see the message during joining the server and has to confirm it before continuing. For more complex changes to this window you can change the "serverjoinrulesdialog" window in XUi -->
+	<property name="ServerLoginConfirmationText"	value="Yep, this window still needs to be confirmed to join the server." />					<!-- If set the user will see the message during joining the server and has to confirm it before continuing. For more complex changes to this window you can change the "serverjoinrulesdialog" window in XUi -->
 
 	<!-- Networking -->
 	<property name="ServerPort"						value="26900"/>				<!-- Port you want the server to listen on. -->
@@ -87,8 +87,8 @@
 	<property name="ZombieMoveNight"				value="3" />				<!-- 0-4 (walk, jog, run, sprint, nightmare) -->
 	<property name="ZombieFeralMove"				value="3" />				<!-- 0-4 (walk, jog, run, sprint, nightmare) -->
 	<property name="ZombieBMMove"					value="3" />				<!-- 0-4 (walk, jog, run, sprint, nightmare) -->
-	<property name="BloodMoonFrequency"				value="10" />				<!-- What frequency (in days) should a blood moon take place. Set to "0" for no blood moons -->
-	<property name="BloodMoonRange"					value="4" />				<!-- How many days can the actual blood moon day randomly deviate from the above setting. Setting this to 0 makes blood moons happen exactly each Nth day as specified in BloodMoonFrequency -->
+	<property name="BloodMoonFrequency"				value="8" />				<!-- What frequency (in days) should a blood moon take place. Set to "0" for no blood moons -->
+	<property name="BloodMoonRange"					value="3" />				<!-- How many days can the actual blood moon day randomly deviate from the above setting. Setting this to 0 makes blood moons happen exactly each Nth day as specified in BloodMoonFrequency -->
 	<property name="BloodMoonWarning"				value="6" />				<!-- The Hour number that the red day number begins on a blood moon day. Setting this to -1 makes the red never show.  -->
 	<property name="BloodMoonEnemyCount"			value="12" />				<!-- This is the number of zombies that can be alive (spawned at the same time) at any time PER PLAYER during a blood moon horde, however, MaxSpawnedZombies overrides this number in multiplayer games. Also note that your game stage sets the max number of zombies PER PARTY. Low game stage values can result in lower number of zombies than the BloodMoonEnemyCount setting. Changing this setting has a huge impact on performance. -->
 
