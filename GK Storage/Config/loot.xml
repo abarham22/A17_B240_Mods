@@ -1,0 +1,7 @@
+<Gouki>
+
+    <set xpath="/lootcontainers/lootcontainer[@id='1']/@size">10,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='5']/@size">10,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='3']/@size">10,9</set>
+
+</Gouki>

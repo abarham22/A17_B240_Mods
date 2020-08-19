@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<ModInfo>
-		<Name value="Fun Spotlights" />
-		<Description value="Allow all sort of rotations on spotlights" />
-		<Author value="dcsobral" />
-		<Version value="1.0.0" compat="A18.4" />
-	</ModInfo>
-</xml>
