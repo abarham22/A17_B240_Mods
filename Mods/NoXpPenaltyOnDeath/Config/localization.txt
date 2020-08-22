@@ -1,0 +1,4 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+buffNewbieCoatDesc,buffs,Buff,New,You are temporarily protected from heat and cold.\n\nThis protection will decrease and disappear at level 6 so think ahead.,,,,,
+ttResurrectXPLost,UI,Tooltip,New,You've been resurrected.,,,,,
+ttResurrectMaxXPLost,UI,Tooltip,New,You've been resurrected.,,,,,

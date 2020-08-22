@@ -1,0 +1,7 @@
+﻿<configs>
+
+<!-- Set the value of experience deficit per death to 0. -->
+
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitPerDeathPercentage']/@value">0</set>
+
+</configs>

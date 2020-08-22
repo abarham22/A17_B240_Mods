@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="No XP Penalty on Death" />
+		<Description value="Set the value of experience deficit per death to 0, effectively removing the penalty from game." />
+		<Author value="moriakGG" />
+		<Version value="2.0" />
+	</ModInfo>
+</xml>
